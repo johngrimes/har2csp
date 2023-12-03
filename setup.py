@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='har2csp',
     version='1.0.0',
     description='A library to generate CSP headers from HAR files',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='John Grimes',
     author_email='john@grimes.id.au',
     url='https://github.com/johngrimes/har2csp',
